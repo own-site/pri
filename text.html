@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tab页切换</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4032357_u9vnovn9jo.css">
+    <style>
+        .tab {
+            overflow: auto;
+            width: 280px;
+            border-radius: 20px;
+        }
+        
+        .tab a {
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #fb541c;
+            border-radius: 10px;
+            text-decoration: none;
+            float: left;
+            cursor: pointer;
+        }
+        
+        .tab a:hover {}
+        
+        .tab .active {
+            margin-left: 10px;
+            background-color: #fb541c;
+            color: #fdfcff;
+        }
+        
+        .content {
+            /* width: 220px;
+            height: 180px; */
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+            color: #f97447;
+            /* background: orange; */
+            border-radius: 10px;
+        }
+        
+        .content div {
+            display: none;
+        }
+        
+        .content div:target {
+            display: block;
+        }
+        
+        .table {
+            /* width: 900px; */
+            /* margin: auto; */
+            border: #dedede 1px solid;
+            /* border-spacing: 0px; */
+            border-collapse: collapse;
+        }
+        
+        th {
+            /*为页面中所有的th标签添加样式*/
+            border: black 1px solid;
+            /*添加边框*/
+            width: 600px;
+            height: 30px;
+        }
+        
+        td {
+            /*为页面中所有的td标签添加样式*/
+            border: #dedede 1px solid;
+            /*添加边框*/
+            width: 600px;
+            height: 40px;
+        }
+        
+        td a {
+            margin-left: 10px;
+            color: #f97447;
+            text-decoration: none;
+        }
+        
+        td span {
+            margin-left: 10px;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- tab栏 -->
+    <div class="tab">
+        <a href="#content1" class="active">2023最新课程</a>
+        <a href="#content2">初中全套</a>
+    </div>
+
+    <!-- 内容栏 -->
+    <div class="content">
+        <!-- <div id="content1">content1</div> -->
+        <div id="content1">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="#content1">主页</a>
+                        <!-- <span>/</span><a href="#li1">23届中考密训班更新中</a> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="icon-yx_folder iconfont"></i><a href="#li1">23届中考密训班更新中</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">售后微信 taovvnn</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">希望学【学而思化身】更新中</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">猿辅导</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">作业帮更新中</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content2">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="http://baidu.com">主页</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">2022年初三【机构网课】</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">初中十科【机构网课】</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">初中十科【课本同步课程】</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">初中十科其他版本【课本同步课程】</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="li1">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="#content1">主页</a>
+                        <span>/</span><a href="#li1">23届中考密训班更新中</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="icon-yx_folder iconfont"></i><a href="#a1">中考化学密训</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">23中考数学密训</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">23中考物理密训</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">23中考英语密训</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://baidu.com">23中考语文密训</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="a1">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="#content1">主页</a>
+                        <span>/</span><a href="#li1">23届中考密训班更新中</a>
+                        <span>/</span><a href="#a1">2023中考化学密训</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#a2">密训班</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="a2">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="#content1">主页</a>
+                        <span>/</span><a href="#li1">23届中考密训班更新中</a>
+                        <span>/</span><a href="#a1">2023中考化学密训</a>
+                        <span>/</span><a href="#a2">密训班</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#a3">课堂笔记</a></td>
+                </tr>
+                <tr>
+                    <td><a>1.【帮化学】从一模看中考杨文智.mp4</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="a3">
+            <table class="table">
+                <tr>
+                    <td><span>当前目录：</span><a href="#content1">主页</a>
+                        <span>/</span><a href="#li1">23届中考密训班更新中</a>
+                        <span>/</span><a href="#a1">2023中考化学密训</a>
+                        <span>/</span><a href="#a2">密训班</a>
+                        <span>/</span><a href="#a3">课堂笔记</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a>1.化学密训【课堂笔记】主讲课中笔记 (1).pdf</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        // 绑定点击事件
+        $('.tab a').unbind('click').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        // 给默认
+        $('.tab a')[0].click();
+    </script>
+
+</body>
+
+</html>
