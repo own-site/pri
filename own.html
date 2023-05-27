@@ -3,23 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>初中课程目录</title>
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4032357_u9vnovn9jo.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4032357_uch5ymht5bl.css">
+
     <style>
         body {
             background-color: #f6f6f6;
+            /* display: block; */
+            line-height: 1.6;
+            font-weight: 400;
+            /* font: inherit;
+            vertical-align: baseline; */
         }
         
         .body-style {
-            margin: auto;
+            /* margin: auto; */
+            /* line-height: 1.6; */
+            /* margin-left: 10px; */
+            /* margin-right: 10px; */
         }
         
         .tab {
             overflow: auto;
             width: 340px;
             border-radius: 30px;
-            margin-left: 100px;
+            /* margin-left: 100px; */
         }
         
         .tab a {
@@ -29,7 +39,7 @@
             text-align: center;
             font-size: 16px;
             color: #fb541c;
-            border-radius: 10px;
+            border-radius: 50px;
             text-decoration: none;
             float: left;
             cursor: pointer;
@@ -53,10 +63,12 @@
             /* color: #f97447; */
             /* background: orange; */
             border-radius: 10px;
+            /* position: relative; */
         }
         
         .content div {
             display: none;
+            position: relative;
         }
         
         .content div:target {
@@ -64,9 +76,8 @@
         }
         
         .table {
-            margin: auto;
-            width: 80%;
             /* margin: auto; */
+            width: 100%;
             border: #dedede 1px solid;
             /* border-spacing: 0px; */
             border-collapse: collapse;
@@ -77,7 +88,8 @@
             /*为页面中所有的th标签添加样式*/
             border: black 1px solid;
             /*添加边框*/
-            width: 80%;
+            /* width: 100%; */
+            /* padding: 1.25rem; */
             height: 50px;
         }
         
@@ -85,7 +97,7 @@
             /*为页面中所有的td标签添加样式*/
             border: #dedede 1px solid;
             /*添加边框*/
-            width: 80%;
+            /* width: 100%; */
             height: 50px;
         }
         
@@ -99,17 +111,17 @@
             margin-left: 10px;
             font-size: 16px;
             color: black;
+            font-weight: 400;
         }
-        
-        td i {
+        /* td i {
             margin-left: 10px;
             font-size: 16px;
-        }
+        } */
         
         .hr-style {
-            width: 90%;
-            height: 100px;
-            margin: auto;
+            /* width: 90%; */
+            height: 80px;
+            /* margin: auto; */
             margin-bottom: 10px;
             border-bottom: #dedede 1px dashed;
         }
@@ -22827,15 +22839,16 @@ C207.课程大纲【2023春上.S班】初二语文培训班（何峥峥）.pdf</
                 </table>
             </div>
         </div>
-        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js "></script>
-        <script>
-            // 绑定点击事件
-            $('.tab a').unbind('click').click(function() {
-                $(this).addClass('active').siblings().removeClass('active');
-            });
-            // 给默认
-            $('.tab a')[0].click();
-        </script>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js "></script>
+    <script>
+        // 绑定点击事件
+        $('.tab a').unbind('click').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        // 给默认
+        $('.tab a')[0].click();
+    </script>
 
 </body>
 
